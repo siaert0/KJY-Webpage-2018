@@ -31,8 +31,8 @@ a {
 
 #wrap {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     min-width: 1024px;
     min-height: 768px;
     background: url("../img/main.jpg") no-repeat left bottom;
@@ -78,8 +78,8 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 article {
