@@ -52,27 +52,9 @@ a {
 .logo .logo_icon {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #000;
+    color: #555;
     text-shadow: 2px 2px #333;
 }
-
-
-.slogan {
-    position: fixed;
-    top: 350px;
-    left: 80px;
-    font-size: 3.7rem;
-    color: #666;
-    letter-spacing: 1.1px;
-    text-shadow: 3px 3px #484242;
-}
-
-.slogan span {
-    font-size: 3.7rem;
-    color: black;
-
-}
-
 
 section {
     position: fixed;
