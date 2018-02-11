@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot 페이지</title>
+    <link href="../css/sub.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <style>
+        :root {
+            --Bg-color : snow;
+            --main-color : mediumseagreen;
+        }
+
+        body {
+            background: var(--Bg-color);
+        }
+
+        .pf_preview h2 > span, .pf_preview_content p:after , .logo, .pf_preview_content p:last-child > a:hover, .quote, .footer_container span  {
+            color: var(--main-color);
+        }
+
+        .pf_preview h2 > span:after {
+            border-top: 4px solid var(--main-color);
+        }
+        .top_btn:before,.home_btn:before {
+            border : 2px solid var(--main-color);
+        }
+    </style>
+</head>
+<body>
+<a href="#" class="top_btn pix"><i class="fas fa-angle-double-up icon"></i></a>
+<a href="../index.html" class="home_btn pix"><i class="fas fa-home icon"></i></a>
+<div id="wrap">
+
+    <!-- header-->
+    <header>
+        <div class="header_container">
+            <h1 class="text_hide">포트폴리오 상세 페이지</h1>
+            <div class="container_head">
+                <a href="../index.html" class="head"><i class="fa fa-cubes logo" aria-hidden="true"></i></a>
+            </div>
+
+            <nav>
+                <div class="lang">
+                    <span>Java</span>
+                    <span>SpringBoot</span>
+                    <span>Ajax</span>
+                    <span>BootStrap</span>
+                    <span>H2</span>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" id="menu_toggle">
+                    <label for="menu_toggle">
+                        <span class="menu_toggle_icon"></span>
+                    </label>
+                </div>
+                <div class="mobile">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section title -->
+    <section>
+        <div class="pf_title" style="background-image: url(../img/boot/bg.jpg)">
+            <h2>
+                Restful SpringBoot Board
+            </h2>
+        </div>
+    </section>
+
+    <!-- section preview -->
+    <section>
+        <div class="pf_preview">
+            <div class="pf_preview_title">
+                <h2><span>P</span>review</h2>
+            </div>
+            <div class="pf_preview_content">
+                <h3>Day</h3>
+                <p>17.07.13 ~ 31</p>
+                <h3>Personnel</h3>
+                <p>1명</p>
+                <h3>Github</h3>
+                <p><a href="https://github.com/siaert0/Personel_Project1
+">https://github.com/siaert0/Personel_Project1
+                </a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section slide -->
+    <section>
+        <div class="pf_slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/boot/boot1_1200x550.jpg" alt="java 로고">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/boot/boot2_1200x550.jpg" alt="java 로고">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/boot/boot3_1200x550.jpg" alt="java 로고">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/boot/boot4_1200x550.jpg" alt="java 로고">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section solution -->
+    <section>
+        <div class="pf_solution">
+            <div class="solution_content solution_1st">
+                <div class="1st_img content_img">
+                    <img src="../img/boot/detail1_400x350.jpg" alt="">
+                </div>
+                <div class="1st_content content_body">
+                    <h3>반복적인 테스트값 입력</h3>
+                    <p><i class="fas fa-quote-left quote"></i> 번거로운 테스트값 입력 행동을 import.sql을 통해서 실행 시 자동으로 DB에 값이 되게끔 설정해 주었다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+
+            <div class="solution_content solution_2nd">
+                <div class="2nd_img content_img">
+                    <img src="../img/boot/detail2_400x350.jpg" alt="">
+                </div>
+                <div class="2nd_content content_body">
+                    <h3>Restful 관련된 문제</h3>
+                    <p><i class="fas fa-quote-left quote"></i> Restful를 위해 클라이언트에서 서버측으로 데이터를 전송할 시 input type hidden을 이용. 값을 Put으로 지정 하여 최대한 Rest의 원칙을 지키기 위해 노력했다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+
+            <div class="solution_content solution_3rd">
+                <div class="3rd_img content_img">
+                    <img src="../img/boot/detail3_400x350.png" alt="">
+                </div>
+                <div class="3rd_content content_body">
+                    <h3>Refactoring</h3>
+                    <p><i class="fas fa-quote-left quote"></i> 3개의 VO클래스에서 중복되는 부분을 부모클래스로 리팩토링하여 각각의 클래스에서 상속받게 변경하였으며, HTML은 Mustache를 사용하여, 중복되는 부분을 Include 하였다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+
+            <div class="solution_content solution_4th">
+                <div class="4th_img content_img">
+                    <img src="../img/boot/detail4_400x350.jpg" alt="">
+                </div>
+                <div class="4th_content content_body">
+                    <h3>자동 배포환경</h3>
+                    <p><i class="fas fa-quote-left quote"></i> Docker 환경에서 Jenkins를 연동시킨 Github에 Push 이벤트가 일어날 경우 Slack에서 메시지로 알려주게끔 해봤다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- wrap -->
+
+<!-- footer -->
+<footer>
+    <div class="footer_container">
+        <p><span>T</span>hank You. </p>
+        <p><span>ⓒ</span> Copyright 2018. 강진영 All rights reserved.</p>
+    </div>
+</footer>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="../js/sub.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            // when window width is <= 320px
+            1024 : {
+                slidesPerView: 2,
+                spaceBetween: 100
+            },
+        }
+    }); // swiper silde
+</script>
+</body>
+</html>

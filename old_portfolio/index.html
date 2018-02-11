@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Portfolio V1</title>
+    <meta name="keywords" content="프론트엔드개발자, 웹퍼블리셔, Portfolio, 포트폴리오, 강진영">
+    <meta name="description" content="강진영의 포트폴리오 소개 사이트">
+    <meta name="author" content="강진영">
+    <meta property="og:title" content="프론트 개발자를 꿈꾸는 강진영의 Portfolio!">
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="">
+    <meta property="og:description" content="포트폴리오 소개 사이트 입니다.">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+</head>
+
+<body>
+<div id="wrap">
+    <header class="header slide">
+        <div class="header_container">
+            <div class="container_head">
+                <a href="index.html" class="head"><i class="fa fa-cubes logo" aria-hidden="true"></i></a>
+            </div>
+
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="menu_toggle">
+                    <label for="menu_toggle">
+                        <span class="menu_toggle_icon"></span>
+                    </label>
+                </div>
+                <div class="mobile">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav_menu">
+                    <ul>
+                        <li><a href="#home" class="active"><i class="fa fa-home nav_icon" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user nav_icon" aria-hidden="true"></i>About</a></li>
+                        <li><a href="#portfolio"><i class="fa fa-file-code nav_icon" aria-hidden="true"></i>Portfolio</a></li>
+                        <li><a href="#contact"><i class="fa fa-handshake nav_icon" aria-hidden="true"></i>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <span class="border_span"></span>
+    </header>
+
+    <!--home-->
+    <section id="home" class="slide">
+        <h1 class="typed_title">
+            I Dream of <span class="typed"></span>
+        </h1>
+        <div id="scroll_icon">
+            <i class="fa fa-angle-double-down"></i>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="slide">
+        <div class="about_container">
+            <div class="top_title">
+                <h2>About Me</h2>
+            </div>
+            <div class="bottom_content">
+                <div class="content_box">
+                    <article>
+                        <div class="intro_head article_head">
+                            <span class="article_icon intro"></span>
+                        </div>
+                        <div class="intro_body article_body">
+                            <p>강진영</p>
+                            <p>87.01.24 / 남</p>
+                            <p>siaert000@gmail.com</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="content_box two">
+                    <article>
+                        <div class="skills_head article_head">
+                            <span class="article_icon skills"></span>
+                        </div>
+                        <div class="skills_body article_body">
+                            <p>HTML, CSS, JavaScript, Jquery, BootStrap</p>
+                            <p>Java, Spring, SpringBoot, JSP, Laravel, Vue.js</p>
+                            <p>MySQL, Oracle, Git</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="content_box three">
+                    <article>
+                        <div class="education_head article_head">
+                            <span class="article_icon education"></span>
+                        </div>
+                        <div class="education_body article_body">
+                            <p>2017년 UI/UX 웹 어플리케이션 6개월 과정 수료.</p>
+                            <p>2013년 가천대학교 졸업.</p>
+                            <p>2011년 정보처리기사 취득.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="content_box four">
+                    <article>
+                        <div class="message_head article_head">
+                            <span class="article_icon message"></span>
+                        </div>
+                        <div class="message_body article_body">
+                            <p>좋은 사람과 좋은 개발자를 지향하고 있습니다.<br>현재는 퍼블리셔와 Vue.js을 공부하고 있습니다.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--portfolio-->
+    <section id="portfolio" class="slide">
+        <div class="portfolio_container">
+            <div class="top_title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="bottom_content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide_img"><img src="images/portfolio_java_img.jpg" alt="java 로고"></div>
+                            <div class="slide_content">
+                                <h3>Simple Chat & Multi Thread</h3>
+                                <P>Java</P>
+                                <a href="#">MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_img"><img src="images/portfolio_spring_img.png" alt="spring boot 로고"></div>
+                            <div class="slide_content">
+                                <h3>Restful 게시판</h3>
+                                <P>SpringBoot & M2</P>
+                                <a href="#">MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_img"><img src="images/portfolio_lalavel_img.PNG" alt="laravel freamwork 로고"></div>
+                            <div class="slide_content">
+                                <h3>Restful 게시판</h3>
+                                <P>Laravel, Bitnami(WAMP)</P>
+                                <a href="#">MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_img"><img src="images/portfolio_homepage_img.PNG" alt="html css javascript 각각의 로고"></div>
+                            <div class="slide_content">
+                                <h3>Portfolio Page</h3>
+                                <P>HTML, CSS, JavaScript, Jqeury</P>
+                                <a href="#">MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_img"><img src="images/portfolio_vuejs_img.jpg" alt="vue.js 로고"></div>
+                            <div class="slide_content">
+                                <h3>제작중.</h3>
+                                <P>Vue.js</P>
+                                <a href="#">MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_img"><img src="images/ready.PNG" alt=""></div>
+                            <div class="slide_content">
+                                <h3>홈페이지 리뉴얼</h3>
+                                <P>HTML, CSS, JavaScript</P>
+                                <a href="#">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="slide">
+        <div class="contact_container">
+            <div class="top_title">
+                <h2>Contact</h2>
+            </div>
+            <div class="bottom_content">
+                <div class="contact_info">
+                    <div class="info_mail info">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p>siaert000@gmail.com</p>
+                    </div>
+                    <div class="info_address info">
+                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <p>경기고 광주시 거주</p>
+                    </div>
+                    <div class="info_epilogue info">
+                        <span><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <p>Back-End쪽을 공부해 왔고, Bootstrap으로 떼우던 나에게 퍼블리셔 작업은 굉장히 낯선 영역이였다. 하지만 근래에 Front-End쪽에 많은 관심이 생겨 자연스레 퍼블리셔에 대해 알아보자는 마음으로 이 프로젝트를 시작하게 되었다. 그리고 처음 도전해 본 퍼블리싱 작업이 나에게 굉장히 유익하고 값진 시간이였다는 생각이 들었다. 비록 UI/UX, 웹 표준, 웹 접근성, 크로스 브라우징 등등 퍼블리셔가 해야 할 일들을 많이 놓치긴 했지만, 무엇을 하나 만들어 봄으로써 나의 부족함을 깨닫고 전체적인 흐름을 대략 파악해 볼 수 있는 좋은 계기가 되었다. 이번 작업을 통해서 배운 여러 가지 지식과 꾸준한 학습을 통해 다음에는 기존 홈페이지 리뉴얼 작업이나 현재 공부 중인 Vue.js의 프로젝트에 더 좋은 퍼블리싱을 하고 싶다.
+                        </p>
+                    </div>
+                    <div class="info"></div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_container">
+                    <p>Thank You. </p>
+                    <p>ⓒ Copyright 2018. 강진영 <br> All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <div></div>
+</div>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        slidesPerColumn: 1,
+        spaceBetween: 150,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            // when window width is <= 320px
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 150
+            },
+
+            1024 : {
+                slidesPerView: 2,
+                spaceBetween: 100
+            }
+        }
+    });
+</script>
+<script src="js/main.js"></script>
+<script src="js/typed.js"></script>
+</body>
+</html>

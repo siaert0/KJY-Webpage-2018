@@ -7,6 +7,7 @@
 	src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
 }
 
+/* start reset */
 html {
 	box-sizing: border-box;
 	margin: 0;
@@ -41,8 +42,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 body {
-	background: rgba(155,155,155,0.17);
+	position: relative;
 }
+/* end reset */
 
 #wrap {
 	max-width: 1200px;
@@ -57,6 +59,7 @@ body {
 	font-size: 1rem;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 header .header_container {
@@ -95,7 +98,6 @@ nav .lang span {
 	visibility: hidden;
 	display: none;
 }
-
 
 @media (max-width: 768px) {
 	header .header_container {
@@ -194,7 +196,6 @@ section {
 	flex: 0 0 600px;
 }
 
-
 section .pf_title {
 	position: relative;
 	height: 600px;
@@ -221,9 +222,18 @@ section .pf_title {
 	margin: 80px 0;
 }
 
-
 .pf_preview h2 {
 	font-size: 4rem;
+}
+
+.pf_preview h2 > span {
+	display: inline-block;
+}
+
+.pf_preview h2 > span:after {
+	content: "";
+	display: block;
+	width: inherit;
 }
 
 .pf_preview .pf_preview_title {
@@ -235,14 +245,33 @@ section .pf_title {
 }
 
 .pf_preview_content h3 {
-	padding-top: 80px;
+	padding-top: 55px;
 	font-size: 2.8rem;
 }
 
 .pf_preview_content p {
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 7px;
 	font-size: 1.3rem;
+}
+
+.pf_preview_content p:after {
+	font-family: FontAwesome;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 20px;
+	margin-top: 50px;
+	content: "*";
+	font-size: 2rem;
+}
+
+.pf_preview_content p:last-child:after {
+	display: none;
+}
+
+.pf_preview_content p:last-child > a:hover {
+	transition: all 0.5s ;
 }
 
 .pf_slide:before {
@@ -251,7 +280,7 @@ section .pf_title {
 	content: "";
 	height: 1px;
 	width: 100%;
-	border: 2px solid #333333;
+	border: 4px solid #000;
 }
 
 .pf_slide:after {
@@ -261,7 +290,7 @@ section .pf_title {
 	height: 1px;
 	width: 100%;
 	margin-top: 10px;
-	border: 2px solid #333333;
+	border: 4px solid #000;
 }
 
 .pf_slide .swiper-container {
@@ -281,6 +310,10 @@ section .pf_title {
 	margin: auto;
 }
 
+.swiper-pagination {
+	padding-bottom : 20px;
+}
+
 .swiper-button-next {
 	margin-right: 20px;
 }
@@ -288,7 +321,6 @@ section .pf_title {
 .swiper-button-prev {
 	margin-left: 20px;
 }
-
 
 .pf_solution {
 	display: flex;
@@ -308,11 +340,6 @@ section .pf_title {
 	height: 100%;
 	width: 400px;
 }
-
-.solution_content .content_body {
-}
-
-
 
 .solution_content h3 {
 	font-size: 2.7rem;
@@ -344,7 +371,6 @@ section .pf_title {
 	margin-right: 70px;
 }
 
-
 footer {
 	display: block;
 	position: relative;
@@ -365,4 +391,52 @@ footer {
 .footer_container p:last-child {
 	font-size: 1rem;
 	letter-spacing: .7px;
+}
+
+.pix {
+	font-size: 2rem;
+	position: fixed;
+	z-index: 10;
+}
+
+.home_btn {
+	top : 90%;
+	right: 10%;
+	text-align: center;
+}
+
+.home_btn:before {
+	width: 3rem;
+	height: 3rem;
+	content: attr(data-before);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.8rem;
+	margin-left: -1.6rem;
+
+}
+
+.top_btn {
+	top: 90%;
+	right: 7%;
+	display: none;
+}
+
+.top_btn:before {
+	width: 3rem;
+	height: 3rem;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.8rem;
+	margin-left: -1.6rem;
+}
+
+.quote {
+	font-size: 1.3rem;
+	vertical-align: top;
 }

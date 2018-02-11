@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Old Portfolio 페이지</title>
+    <link href="../css/sub.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <style>
+        :root {
+            --Bg-color : white;
+            --main-color : slategray;
+        }
+
+        body {
+            background: var(--Bg-color);
+        }
+
+        .pf_preview h2 > span, .pf_preview_content p:after , .logo, .pf_preview_content p:last-child > a:hover, .quote, .footer_container span  {
+            color: var(--main-color);
+        }
+
+        .pf_preview h2 > span:after {
+            border-top: 4px solid var(--main-color);
+        }
+        .top_btn:before,.home_btn:before {
+            border : 2px solid var(--main-color);
+        }
+    </style>
+</head>
+<body>
+<a href="#" class="top_btn pix"><i class="fas fa-angle-double-up icon"></i></a>
+<a href="../index.html" class="home_btn pix"><i class="fas fa-home icon"></i></a>
+<div id="wrap">
+
+    <!-- header-->
+    <header>
+        <div class="header_container">
+            <h1 class="text_hide">포트폴리오 상세 페이지</h1>
+            <div class="container_head">
+                <a href="../index.html" class="head"><i class="fa fa-cubes logo" aria-hidden="true"></i></a>
+            </div>
+
+            <nav>
+                <div class="lang">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>jQuery</span>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" id="menu_toggle">
+                    <label for="menu_toggle">
+                        <span class="menu_toggle_icon"></span>
+                    </label>
+                </div>
+                <div class="mobile">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section title -->
+    <section>
+        <div class="pf_title" style="background-image: url(../img/old/bg.jpg);">
+            <h2 style="top:18%; left: 2%; text-shadow: 3.5px 3px #555; color: white">
+                Old Portfolio Page
+            </h2>
+        </div>
+    </section>
+
+    <!-- section preview -->
+    <section>
+        <div class="pf_preview">
+            <div class="pf_preview_title">
+                <h2><span>P</span>review</h2>
+            </div>
+            <div class="pf_preview_content">
+                <h3>Day</h3>
+                <p>18.01.05 ~ 15</p>
+                <h3>Personnel</h3>
+                <p>1명</p>
+                <h3>Site</h3>
+                <p><a href="../old_portfolio/index.html">바로가기</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section solution-->
+    <section>
+        <div class="pf_solution">
+            <div class="solution_content solution_1st">
+                <div class="1st_img content_img">
+                    <img src="../img/old/old1_400x350.PNG" alt="">
+                </div>
+                <div class="1st_content content_body">
+                    <h3>W3C Validator</h3>
+                    <p><i class="fas fa-quote-left quote"></i> 해당 페이지가 올바른 코드로 작성 되었는지 여부를 확인하기 위해 W3C의 유효성 검사를 실시하였다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+
+            <div class="solution_content solution_2nd">
+                <div class="2nd_img content_img">
+                    <img src="../img/old/old2_400x350.jpg" alt="">
+                </div>
+                <div class="2nd_content content_body">
+                    <h3>jQuery의 library</h3>
+                    <p><i class="fas fa-quote-left quote"></i> 다양한 브라우저를 지원하는 jQuery의 활용성을 깨달아 JS와 jQuery 공부를 하였으며, 검색을 통해 다양한 오픈소스 라이브러리 등을 활용 및 이용해 보았다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+
+            <div class="solution_content solution_3rd">
+                <div class="3rd_img content_img">
+                    <img src="../img/old/old3_400x350.png" alt="">
+                </div>
+                <div class="3rd_content content_body">
+                    <h3>Responsive Web</h3>
+                    <p><i class="fas fa-quote-left quote"></i> 미디어쿼리를 사용. 간단히 768px만을 브레이크 포인트로 설정하여 설계해 보았다. <i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- /wrap-->
+
+
+<!-- footer-->
+<footer>
+    <div class="footer_container">
+        <p><span>T</span>hank You. </p>
+        <p><span>ⓒ</span> Copyright 2018. 강진영 All rights reserved.</p>
+    </div>
+</footer>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="../js/sub.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            // when window width is <= 320px
+            1024 : {
+                slidesPerView: 2,
+                spaceBetween: 100
+            },
+        }
+    });
+</script>
+</body>
+</html>
